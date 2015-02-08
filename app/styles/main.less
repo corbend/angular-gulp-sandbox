@@ -1,0 +1,86 @@
+@import "layout";
+
+body {
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+
+.left-edge {
+	display: none;
+	position: absolute;
+	left: 0;
+	width: 15px;
+	top: 0;
+	bottom: 0;
+	border-top-left-radius: 14px;
+	border-bottom-left-radius: 14px;
+	z-index: 2;
+}
+
+.right-edge {
+	display: none;
+	position: absolute;
+	right: 0;
+	width: 15px;
+	top: 0;
+	bottom: 0;
+	border-top-right-radius: 14px;
+	border-bottom-right-radius: 14px;
+	z-index: 2;
+}
+
+.left-fill, .right-fill {
+    background-color: #3D9AD1;
+    top: 0;
+    bottom: 0;
+    width: 0;
+/*    left: 15px;
+    right: 15px;*/
+    position: absolute;
+    z-index: 0;
+}
+
+.left-fill {
+    left: 0;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.right-fill {
+    right: 0;
+}
+
+.rail-wrapper {
+    position: relative;
+    background-color: #ccc;
+    min-width: 230px;
+
+    border-radius: 13px;
+    height: 30px;
+    width: 100%;
+}
+
+.rail {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	border: 4px solid white;
+	border-radius: 13px;
+	z-index: 1;
+}
+
+.knob {
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+    //border: 2px solid #aaa;
+    min-width: 35px;
+    min-height: 35px;
+    top: -2px;
+    left: 0px;
+    z-index: 3;
+    cursor: move;
+}
